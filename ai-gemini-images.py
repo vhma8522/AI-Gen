@@ -2,8 +2,6 @@ from google import genai
 from google.genai import types
 from PIL import Image #Import the Pillow library for image handling
 
-client = genai.Client(api_key="AIzaSyCsLVel40vRDF1Sl_kouXJuycesve1L9ic")
-
 prompt = ("Create a picture of a nano banana dish in a fancy restaurant with a Gemini theme")
 response = client.models.generate_content(
     model="gemini-2.5-flash-image",
